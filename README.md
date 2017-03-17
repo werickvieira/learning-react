@@ -1,7 +1,6 @@
 # learning-react
 Testando React
 # Dependências necessárias
-
   * npm install --save-dev babel-cli
   * npm install --save-dev babel-core
   * npm install --save-dev babel-preset-env
