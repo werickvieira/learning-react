@@ -24,7 +24,7 @@ const browserify = require('browserify');
 const source = require('vinyl-source-stream');
 
 const $ = gulpLoadPlugins();
-const amazonaURL = 'http://infograficos-estaticos.s3.amazonaws.com/delacoes-odebrecht/';
+
 const paths = {
   build:{
    img:'assets/img/**/*.*',
@@ -77,7 +77,7 @@ gulp.task('sass',() =>{
 
 gulp.task('views', () => {
   return gulp.src(paths['build'].pug)
-  .pipe(pug({pretty: true, data:{ url : amazonaURL, prod : false } }))
+  .pipe(pug({pretty: true, data:{ prod : false } }))
   .pipe(gulp.dest('public/'))
   .pipe(browserSync.stream());
 });
@@ -104,7 +104,7 @@ gulp.task('browserLive',() => {
 // Build View
 gulp.task('views:build', () => {
   return gulp.src('views/index.build.pug')
-  .pipe(pug({pretty: true, data:{ url : amazonaURL, prod : true }}))
+  .pipe(pug({pretty: true, data:{ prod : true }}))
   .pipe(gulp.dest('public/'))
   .pipe(browserSync.stream());
 });
