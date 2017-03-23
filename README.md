@@ -1,5 +1,7 @@
-# learning-react
-Testando React
+# Quem está usando React
+
+# Por que usá-lo?
+
 # Dependências necessárias
  
   * npm install --save-dev babel-core
