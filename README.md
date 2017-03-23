@@ -3,8 +3,8 @@
 ## Quem está usando React
 
 ## Por que usá-lo?
-   * Componentes reutilizáveis
    * Virtual DOM
+   * Componentes reutilizáveis
    * SEO / Servidor
    
 ## Dependências necessárias
@@ -17,8 +17,9 @@
   * npm install --save-dev vinyl-source-stream 
   * npm install --save react react-dom
   * npm install --save-dev babel-preset-react
-  * npm install --save-dev babel-preset-es2015
+  * npm install --save-dev babel-preset-e
   * npm install --save-dev babel-polyfill
+  
   * npm install --save-dev babel-register
   * npm install --save-dev babel-plugin-transform-react-jsx
   * npm install --save-dev eslint-plugin-react 
