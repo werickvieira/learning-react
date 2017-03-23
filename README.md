@@ -89,62 +89,23 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      paramBusca: '',
-      dados: '',
-      status: false,
-      empty: false
+      parametro: ''
     };
 
     // Métodos
     this.atualizarParametro = this.atualizarParametro.bind(this);
-    this.realizarBusca = this.realizarBusca.bind(this);
-    this.sucesso = this.sucesso.bind(this);
-    this.erro = this.erro.bind(this);
   }
 
   atualizarParametro( e ){
     this.setState({paramBusca: e.target.value});
   }
 
-  realizarBusca( e ){
-    e.preventDefault();
-    this.setState({dados : ''});
-    let _param = this.state.paramBusca.trim();
-    this.componentDidMount(_param);
-  }
-
-  componentDidMount( userLogin ) {
-    if (userLogin !== "" && userLogin !== undefined) {
-      const _REQ = {url : "https://api.github.com/users/"};
-
-      this.setState({status : true});
-      this.setState({empty : false});
-
-      Axios.get(_REQ.url += userLogin)
-      .then( this.sucesso, this.erro );
-    }
-  }
-
-  sucesso( obj ){
-    this.setState({status : false});
-    this.setState({dados: obj.data});
-  }
-
-  erro( err , xhr ){
-    this.setState({status : false});
-    this.setState({empty  : true});
-  }
-
-  enviar(e){
-    e.preventDefault();
-  }
-
   render() {
     return (
       <div className="content limit">
-        <form action="" className="search" onSubmit={this.enviar.bind(this)}>
+        <form action="" className="search">
           <Input args={this.state.paramBusca} method={this.atualizarParametro} />
-          <Button method={this.realizarBusca} />
+          <Button />
         </form>
 
         {this.state.status ? (<Loading></Loading>) : null}
