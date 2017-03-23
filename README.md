@@ -37,7 +37,7 @@ ReactDOM.render(<HelloMessage name="John" />, mountNode)
 ```
 
 
-```Vanilla
+```js
 class HelloMessage extends React.Component {
   render() {
     return React.createElement(
