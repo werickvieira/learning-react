@@ -49,5 +49,12 @@ class HelloMessage extends React.Component {
 
 ReactDOM.render(React.createElement(HelloMessage, { name: "John" }), mountNode);
 ```
+## Exemplo
 
+```html
+  <main role="main">
+    <section id="main">
+    </section><!-- /#main -->
+  </main><!--/main -->
+```
 
