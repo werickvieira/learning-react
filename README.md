@@ -133,5 +133,10 @@ export default App;
   shouldComponentUpdate()
   componentWillUpdate()
  ```
-
+ 
+  ### Desmontando
+  Esse método é chamado quando um componente está sendo removido do DOM:
+  ```jsx
+   componentWillUnmount()
+  ```
 
