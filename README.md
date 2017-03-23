@@ -24,7 +24,9 @@
   * npm install --save-dev babel-plugin-transform-react-jsx
   * npm install --save-dev eslint-plugin-react 
 
-
+## Sintaxe
+  ### jsx
+  
 ```jsx
 class HelloMessage extends React.Component {
   render() {
@@ -37,3 +39,4 @@ ReactDOM.render(
   document.getElementById('container')
 );
 ```
+
