@@ -49,7 +49,7 @@ class HelloMessage extends React.Component {
 
 ReactDOM.render(React.createElement(HelloMessage, { name: "John" }), mountNode);
 ```
-## Exemplo
+## Demonstração
 
 public/index.html
 
