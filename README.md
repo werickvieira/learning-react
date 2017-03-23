@@ -60,5 +60,16 @@ public/index.html
   </main><!--/main -->
 ```
 
+public/js/main.js
 
+```js
+import React    from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/app.jsx';
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('main')
+);
+```
 
