@@ -1,10 +1,10 @@
-#Learning React
+# Learning React
 
-##Quem está usando React
+## Quem está usando React
 
-##Por que usá-lo?
+## Por que usá-lo?
 
-##Dependências necessárias
+## Dependências necessárias
  
   * npm install --save-dev babel-core
   * npm install --save-dev babel-cli
