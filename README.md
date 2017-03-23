@@ -25,7 +25,6 @@
   * npm install --save-dev eslint-plugin-react 
 
 ## Sintaxe
-  ### jsx
   
 ```jsx
 class HelloMessage extends React.Component {
@@ -34,9 +33,23 @@ class HelloMessage extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <HelloMessage name="John" />,
-  document.getElementById('container')
-);
+ReactDOM.render(<HelloMessage name="John" />, mountNode)
 ```
+
+
+```Vanilla
+class HelloMessage extends React.Component {
+  render() {
+    return React.createElement(
+      "div",
+      null,
+      "Hello ",
+      this.props.name
+    );
+  }
+}
+
+ReactDOM.render(React.createElement(HelloMessage, { name: "John" }), mountNode);
+```
+
 
