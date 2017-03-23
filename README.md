@@ -126,4 +126,12 @@ Cada componente tem vários "métodos de ciclo de vida" que você pode substitui
     componentWillMount()
     componentDidMount()
   ```
+  
+  ### Atualizando
+  Uma atualização pode ser causada por alterações em **props** ou **state**. Esses métodos são chamados quando um componente   está sendo re-rendered:
+  ```jsx
+  shouldComponentUpdate()
+  componentWillUpdate()
+ ```
+
 
