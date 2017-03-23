@@ -3,7 +3,10 @@
 ## Quem está usando React
 
 ## Por que usá-lo?
-
+   * Componentes reutilizáveis
+   * Virtual DOM
+   * SEO / Servidor
+   
 ## Dependências necessárias
  
   * npm install --save-dev babel-core
