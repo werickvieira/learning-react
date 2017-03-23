@@ -25,7 +25,7 @@
   * npm install --save-dev eslint-plugin-react 
 
 ## Sintaxe
-  
+jsx
 ```jsx
 class HelloMessage extends React.Component {
   render() {
@@ -36,7 +36,7 @@ class HelloMessage extends React.Component {
 ReactDOM.render(<HelloMessage name="John" />, mountNode)
 ```
 
-
+vanilla
 ```js
 class HelloMessage extends React.Component {
   render() {
