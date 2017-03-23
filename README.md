@@ -1,7 +1,5 @@
 # Learning React
 
-## Quem está usando React
-
 ## Por que usá-lo?
    * Virtual DOM
    * Componentes reutilizáveis
