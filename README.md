@@ -120,8 +120,8 @@ class App extends React.Component {
 export default App;
 ```
 ## O Ciclo de Vida do Componente
-Cada componente tem vários "métodos de ciclo de vida" que você pode substituir para executar o código em momentos específicos do processo. Métodos prefixados com **will** são chamados antes que algo aconteça, e os métodos prefixados com **did** são chamados logo após algo acontecer.
   ### Montagem
+  Cada componente tem vários "métodos de ciclo de vida" que você pode substituir para executar o código em momentos específicos do processo. Métodos prefixados com **will** são chamados antes que algo aconteça, e os métodos prefixados com **did** são chamados logo após algo acontecer.
   ```jsx
     componentWillMount()
     componentDidMount()
