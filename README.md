@@ -51,10 +51,14 @@ ReactDOM.render(React.createElement(HelloMessage, { name: "John" }), mountNode);
 ```
 ## Exemplo
 
+public/index.html
+
 ```html
   <main role="main">
     <section id="main">
     </section><!-- /#main -->
   </main><!--/main -->
 ```
+
+
 
